@@ -13,7 +13,7 @@ RUN apk add --no-cache \
         bash \
         gcompat \
         openjdk11 \
-    && wget -q https://ftp.unicamp.br/pub/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz \
+    && wget -q https://archive.apache.org/dist/hadoop/core/hadoop-3.2.2/hadoop-3.2.2.tar.gz \
     && tar -xf hadoop-3.2.2.tar.gz \
     && rm -rf hadoop-3.2.2.tar.gz \
     && mv hadoop-3.2.2 ${HADOOP_HOME} \
