@@ -28,7 +28,7 @@ RUN mkdir -p /usr/share/man/man1 \
     && apt-get clean \
     && rm -rf -- /var/lib/apt/lists/*
 
-RUN curl -O https://ftp.unicamp.br/pub/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz \
+RUN curl -O https://archive.apache.org/dist/hadoop/core/hadoop-3.2.2/hadoop-3.2.2.tar.gz \
     && tar -xf hadoop-3.2.2.tar.gz \
     && rm -rf hadoop-3.2.2.tar.gz \
     && mv hadoop-3.2.2 ${HADOOP_HOME}
